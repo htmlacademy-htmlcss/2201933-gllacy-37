@@ -663,3 +663,238 @@ gap: 8px 0;
   line-height: 16px;
   color: var(--basic-extra-dark, #2d3440);
 }
+
+/* Catalog */
+
+.main-inner-title {
+  margin-bottom: 40px;
+}
+
+/* Breadcrumbs */
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-bottom: 16px;
+}
+
+.breadcrumbs-link {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--basic-extra-dark, #2D3440);
+}
+
+/* catalog-products */
+
+.filter-catalog {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin-bottom: 44px;
+}
+
+.filter-catalog-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  border: none;
+}
+
+.legend-name {
+  margin-left: 16px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--basic-extra-dark, #2D3440);
+}
+
+.filter-select-control {
+  width: 196px;
+  height: 36px;
+  padding: 8px 63px 8px 16px;
+  border-radius: 20px;
+  border: 0;
+  opacity: 0.3;
+
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--basic-extra-dark, #2D3440);
+
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("../images/icons/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: center right 10px;
+  background-color: var(--basic-extra-light, #fcfcfc);
+}
+
+.range {
+  width: 196px;
+  min-height: 36px;
+  padding: 10px 16px;
+  border-radius: 20px;
+  opacity: 0.3;
+  background: var(--basic-extra-light, #FCFCFC);
+}
+
+.range-scale {
+  position: relative;
+  width: 164px;
+  height: 2px;
+  opacity: 0.3;
+  background-color: #565c66;
+}
+
+.range-bar {
+  position: absolute;
+  height: 2px;
+  background-color: #565c66;
+}
+
+.range-toggle-button {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #2d3440;
+  background-color: #2d3440;
+  cursor: pointer;
+}
+
+.range-min {
+  left: 24px;
+  top: -8px;
+}
+
+.range-max {
+  right: -52px;
+  top: -8px;
+}
+
+.filter-catalog-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 8px 24px;
+  align-items: flex-start;
+  border-radius: 18px;
+  background: var(--basic-extra-light-icon, rgba(252, 252, 252, 0.30));
+}
+
+.control {
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+}
+
+.control-mark {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #2d3440;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #2d3440;
+}
+
+.control-input[type="checkbox"] + .control-mark {
+  border-radius: 3px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/icons/checkbox.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+}
+
+.button-submit {
+  width: 185px;
+  min-height: 36px;
+  padding: 8px 32px;
+  font-size: 14px;
+  border-radius: 20px;
+  border: 2px solid var(--basic-extra-light, #fcfcfc);
+  background-color: rgba(252, 252, 252, 0.30);
+}
+
+.product-catalog-list {
+  margin-bottom: 16px;
+}
+
+.pagination-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 41px 0;
+}
+
+.pagination-show-more {
+  margin: auto;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: auto;
+}
+
+.pagination-item {
+  min-width: 24px;
+  height: 24px;
+  padding: 2px 8px;
+}
+
+.pagination-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  height: 24px;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--basic-extra-dark, #2d3440);
+}
+
+.pagination-arrow {
+  background-image: url("../images/icons/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pagination-current {
+  border-radius: 50px;
+  background: var(--basic-extra-light, #fcfcfc);
+}
