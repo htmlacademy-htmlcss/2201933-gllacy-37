@@ -46,12 +46,12 @@ body {
 }
 
 .background-strawberry {
-  background: var(--special-light, #feafc3);
+  background-color: var(--special-light, #feafc3);
 }
 
 .visually-hidden {
   position: absolute;
-  width: 1px;background
+  width: 1px;
   height: 1px;
   margin: -1px;
   padding: 0;
@@ -87,7 +87,7 @@ body {
   padding: 12px 32px;
   border-radius: 26px;
   border: 4px solid rgba(252, 252, 252, 0.40);
-  background: var(--basic-extra-light, #fcfcfc);
+  background-color: var(--basic-extra-light, #fcfcfc);
   box-shadow: 0px 4px 12px 0px rgba(45, 52, 64, 0.10);
   color: var(--basic-extra-dark, #2d3440);
   font-family: "Inter", sans-serif;
@@ -143,7 +143,9 @@ body {
 
 .has-submenu-link {
   padding-right: 38px;
-  background: url("../images/icons/arrow-down.svg") no-repeat center right 16px;
+  background-image: url("../images/icons/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: center right 16px;
 }
 
 .submenu {
@@ -201,7 +203,9 @@ body {
   height: 32px;
   padding: 8px;
   border-radius: 27px;
-  background: url("../images/icons/search.svg") no-repeat center;
+  background-image: url("../images/icons/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: var(--basic-extra-light-icon, rgba(252, 252, 252, 0.30));
 }
 
@@ -209,7 +213,9 @@ body {
   min-width: 88px;
   padding: 6px 16px 6px 38px;
   border-radius: 30px;
-  background: url("../images/icons/login.svg") no-repeat center left 16px;
+  background-image: url("../images/icons/login.svg");
+  background-repeat: no-repeat;
+  background-position: center left 16px;
   background-color: var(--basic-extra-light-icon, rgba(252, 252, 252, 0.30));
 }
 
@@ -217,7 +223,9 @@ body {
   min-width: 115px;
   padding: 6px 16px 6px 38px;
   border-radius: 30px;
-  background: url("../images/icons/basket.svg") no-repeat center left 16px;
+  background-image: url("../images/icons/basket.svg") no-repeat;
+  background-repeat: no-repeat;
+  background-position: center left 16px;
   background-color: var(--basic-extra-light-icon, rgba(252, 252, 252, 0.30));
 }
 
@@ -302,6 +310,11 @@ body {
   color: var(--basic-extra-dark, #2d3440);
 }
 
+.button-order{
+  width: 176px;
+  padding: 12px 28px;
+}
+
 /* Popular */
 
 .popular {
@@ -325,7 +338,7 @@ body {
   flex-wrap: wrap;
   padding: 0 40px 24px 40px;
   border-radius: 8px;
-  background: var(--basic-extra-light, #fcfcfc);
+  background-color: var(--basic-extra-light, #fcfcfc);
 }
 
 .product-subtitle {
@@ -361,8 +374,10 @@ body {
   padding: 8px 11px;
   border-radius: 26px;
   border: none;
-  background: url("../images/icons/cart-basket.svg") no-repeat center #FF2F64;
-  fill: #FCFCFC;
+  background: url("../images/icons/cart-basket.svg") no-repeat  #FF2F64;
+  background-repeat: no-repeat;
+  background-position: center;
+  fill: #fcfcfc;
 }
 
 /* Information */
@@ -371,7 +386,10 @@ body {
   padding: 24px;
   margin-bottom: 80px;
   border-radius: 16px;
-  background: url(../images/background/background-wafer.jpg), lightgray 50% / cover no-repeat;
+  background-image: url(../images/background/background-wafer.jpg);
+  background-repeat: no-repeat;
+  background-color: lightgray 50%;
+  background-size: cover;
 }
 
 .information-container {
@@ -407,19 +425,25 @@ body {
 }
 
 .information-ice-creem::before {
-  background: url("../images/icons/ice-cream.svg") no-repeat center;
+  background-image: url("../images/icons/ice-cream.svg");
+  background-repeat: no-repeat;
+  background-position: center
 }
 
 .information-cow::before {
-  background: url("../images/icons/cow.svg") no-repeat center;
+  background: url("../images/icons/cow.svg");
+  background-repeat: no-repeat;
+  background-position: center
 }
 
 .information-leaf::before {
-  background: url("../images/icons/leaf.svg") no-repeat center;
+  background: url("../images/icons/leaf.svg");
+  background-repeat: no-repeat;
 }
 
 .information-thermometer::before {
-  background: url("../images/icons/thermometer.svg") no-repeat center;
+  background: url("../images/icons/thermometer.svg");
+  background-position: center
 }
 
 /* index-columns */
@@ -434,7 +458,10 @@ body {
 .blog-news {
   padding: 32px 235px 67px 32px;
   border-radius: 16px;
-  background: url("../images/background/background-news.jpg"), lightgray 0px -109.926px / 112.632% 198.148% no-repeat;
+  background-image: url("../images/background/background-news.jpg");
+  background-repeat: no-repeat;
+  background-color:  lightgray 0px -109.926px / 112.632% 198.148%;
+  background-repeat: no-repeat;
 }
 
 .blog-news-info {
@@ -458,13 +485,16 @@ body {
 .subscribe {
   padding: 6px;
   border-radius: 16px;
-  background: url("../images/background/background-subscribe.jpg"), lightgray 50% / cover no-repeat;
+  background: url("../images/background/background-subscribe.jpg");
+  background-color: lightgray 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .subscribe-container {
   padding: 26px;
   border-radius: 16px;
-  background: #ffffff;
+  background-color: #ffffff;
 
 }
 
@@ -484,7 +514,7 @@ body {
   padding: 14px 16px;
   border-radius: 4px;
   border: 1px solid var(--basic-neutral, #b9b9b9);
-  background: var(--basic-white, #ffffff);
+  background-color: var(--basic-white, #ffffff);
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -495,9 +525,9 @@ body {
 .subscribe-button {
   min-width: 152px;
   border-radius: 26px;
-  background: var(--special-extra-bright, #FF2F64);
+  background-color: var(--special-extra-bright, #ff2f64);
   box-shadow: 0px 4px 12px 0px rgba(45, 52, 64, 0.10);
-  color: var(--basic-extra-light, #FCFCFC);
+  color: var(--basic-extra-light, #fcfcfc);
 
 }
 
@@ -510,7 +540,8 @@ body {
   padding: 64px 64px 64px 100px;
   margin-bottom: 80px;
   border-radius: 16px;
-  background: url("../images/background/background-delivery.jpg") no-repeat;
+  background: url("../images/background/background-delivery.jpg");
+  background-repeat: no-repeat;
 }
 
 .delivery-content {
@@ -524,7 +555,7 @@ body {
   gap: 20px 16px;
   padding: 40px;
   border-radius: 8px;
-  background: var(--basic-extra-light, #fcfcfc);
+  background-color: var(--basic-extra-light, #fcfcfc);
   box-shadow: 0px 15px 40px 0px rgba(45, 52, 64, 0.12);
 }
 
@@ -559,7 +590,7 @@ body {
   padding: 14px 16px;
   border-radius: 4px;
   border: 1px solid var(--basic-neutral, #b9b9b9);
-  background: var(--basic-white, #ffffff);
+  background-color: var(--basic-white, #ffffff);
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -569,7 +600,7 @@ body {
 
 .delivery-submit {
   border-radius: 26px;
-  background: var(--special-extra-bright, #ff2f64);
+  background-color: var(--special-extra-bright, #ff2f64);
   box-shadow: 0px 4px 12px 0px rgba(45, 52, 64, 0.10);
   color: var(--basic-extra-light, #fcfcfc);
 }
@@ -579,8 +610,9 @@ body {
 .contacts {
   padding: 64px;
   border-radius: 16px;
-  background: url("../images/background/background-contacts.jpg") no-repeat;
+  background-color: url("../images/background/background-contacts.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .contacts-address-wrapper {
@@ -589,7 +621,7 @@ body {
   width: 343px;
   padding: 40px;
   border-radius: 8px;
-  background: var(--basic-extra-light, #fcfcfc);
+  background-color: var(--basic-extra-light, #fcfcfc);
   box-shadow: 0px 8px 16px 0px rgba(45, 52, 64, 0.12);
 }
 
@@ -610,7 +642,7 @@ body {
 
 .button-feedback {
   min-width: 250px;
-  background: var(--special-extra-bright, #ff2f64);
+  background-color: var(--special-extra-bright, #ff2f64);
   color: var(--basic-extra-light, #fcfcfc);
 }
 
@@ -742,7 +774,7 @@ gap: 8px 0;
   padding: 10px 16px;
   border-radius: 20px;
   opacity: 0.3;
-  background: var(--basic-extra-light, #FCFCFC);
+  background-color: var(--basic-extra-light, #fcfcfc);
 }
 
 .range-scale {
@@ -787,7 +819,7 @@ gap: 8px 0;
   padding: 8px 24px;
   align-items: flex-start;
   border-radius: 18px;
-  background: var(--basic-extra-light-icon, rgba(252, 252, 252, 0.30));
+  background-color: var(--basic-extra-light-icon, rgba(252, 252, 252, 0.30));
 }
 
 .control {
@@ -894,7 +926,15 @@ gap: 8px 0;
   background-position: center;
 }
 
+.pagination-prev {
+  transform: rotate(180deg);
+}
+
+.pagination-disabled {
+  opacity: 0.3;
+}
+
 .pagination-current {
   border-radius: 50px;
-  background: var(--basic-extra-light, #fcfcfc);
+  background-color: var(--basic-extra-light, #fcfcfc);
 }
